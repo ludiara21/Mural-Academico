@@ -1,1 +1,14 @@
 :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#1b2935;background:#f4f7f9}*{box-sizing:border-box}body{margin:0;min-height:100vh} .container{width:min(1100px,92%);margin:auto}.topo{background:#116149;color:white;padding:24px 0}.marca{font-size:1.5rem;font-weight:750;margin:0}.topo p:last-child{margin-bottom:0}.navegacao{background:#e5f1ec;padding:13px 0}.navegacao a{color:#0b4b38;font-weight:650;margin-right:24px}main{padding:26px 0 55px}h1{margin-bottom:6px}h2{margin-top:0}.filtros{display:flex;gap:16px;flex-wrap:wrap;margin:22px 0}.filtros label{flex:1;min-width:210px}label{display:block;font-weight:600}input,select,textarea{width:100%;margin-top:7px;padding:12px;border:1px solid #a6b5bc;border-radius:7px;background:white;font:inherit}input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:3px solid #edb743;outline-offset:2px}.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}.painel{background:white;padding:24px;border-radius:12px;margin-top:35px;box-shadow:0 2px 12px #153d2910}form{display:grid;gap:15px}button{background:#116149;color:white;border:0;border-radius:7px;padding:13px 20px;font:inherit;font-weight:700;cursor:pointer}button:hover{background:#084b36}.contador{color:#526470}.status{margin-top:18px;min-height:24px;font-weight:600}footer{background:#163e33;color:white;padding:22px 0}aviso-card{display:block}.cartao{height:100%;background:white;padding:20px;border:1px solid #d6e0e3;border-radius:12px;box-shadow:0 2px 10px #0e2a2110}.cartao h3{margin:10px 0}.etiqueta{display:inline-block;background:#d9eee5;color:#15533e;border-radius:30px;padding:4px 11px;font-size:.85rem;font-weight:700}.data{color:#5a6971;font-size:.86rem}.vazio{padding:20px;background:white;border-radius:8px}@media(max-width:600px){.topo{padding:18px 0}.painel{padding:16px}}
+aviso-card {
+  transition: transform 0.2s ease;
+}
+
+aviso-card:hover {
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  aviso-card {
+    transition: none;
+  }
+}
