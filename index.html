@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mural Acadêmico para divulgação de comunicados, eventos e oportunidades." />
+  <title>Mural Acadêmico | UNI-CET</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topo"><div class="container"><p class="marca">UNI-CET · Mural Acadêmico</p><p>Informações da comunidade acadêmica em um só lugar</p></div></header>
+  <nav aria-label="Navegação principal" class="navegacao"><div class="container"><a href="#mural">Mural</a><a href="#cadastro">Novo comunicado</a></div></nav>
+  <main class="container">
+    <section aria-labelledby="titulo-mural" id="mural"><h1 id="titulo-mural">Comunicados acadêmicos</h1><p>Pesquise avisos, eventos, atividades, prazos e oportunidades.</p><div class="filtros"><label for="pesquisa">Pesquisar comunicados<input id="pesquisa" type="search" placeholder="Digite uma palavra-chave" /></label><label for="filtro">Filtrar por categoria<select id="filtro"><option value="">Todas</option><option>Comunicado</option><option>Evento</option><option>Atividade</option><option>Prazo</option><option>Oportunidade</option></select></label></div><p id="contador" class="contador"></p><div id="lista" class="grade"></div></section>
+    <section id="cadastro" aria-labelledby="titulo-cadastro" class="painel"><h2 id="titulo-cadastro">Cadastrar comunicado</h2><form id="formulario"><label for="titulo">Título<input id="titulo" maxlength="100" required /></label><label for="categoria">Categoria<select id="categoria" required><option value="">Selecione</option><option>Comunicado</option><option>Evento</option><option>Atividade</option><option>Prazo</option><option>Oportunidade</option></select></label><label for="descricao">Descrição<textarea id="descricao" rows="4" maxlength="1000" required></textarea></label><button type="submit">Publicar comunicado</button></form></section>
+    <div id="status" class="status" role="status" aria-live="polite" aria-atomic="true"></div>
+  </main>
+  <footer><div class="container">Mural Acadêmico · Projeto acadêmico · UNI-CET</div></footer>
+</body>
+</html>
